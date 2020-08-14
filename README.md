@@ -22,7 +22,7 @@ local lmd = 100 -- 0-200
 local fsc = 100 -- 50-200
 
 -- Takes UTF-8 as input (no kanji).
-local wav, err = aquestalk.synth(text, bas, spd, vol, pit, acc, lmd, fsc)
+local wav, err = aquestalk.synth("ゆっくりしてね", bas, spd, vol, pit, acc, lmd, fsc)
 
 local filedata = love.filesystem.newFileData(wav, "aquestalk.wav")
 local source = love.audio.newSource(filedata, "static")
